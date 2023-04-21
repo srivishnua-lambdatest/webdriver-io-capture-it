@@ -1,5 +1,5 @@
 const logger = require('@wdio/logger').default;
-const log = logger('wdio-capture-it');
+const log = logger('webdriver-io-capture-it');
 
 class WdioCaptureIt {
     constructor(config) {
@@ -13,7 +13,7 @@ class WdioCaptureIt {
     beforeCommand(command, args) {
         if (command === 'execute') {
             const script = args[0];
-            if (script && script.includes('wdio-capture-it')) {
+            if (script && script.includes('webdriver-io-capture-it')) {
                 this.logTestCaseName();
             }
         }
@@ -22,7 +22,7 @@ class WdioCaptureIt {
     afterCommand(command, args) {
         if (command === 'execute') {
             const script = args[0];
-            if (script && script.includes('wdio-capture-it')) {
+            if (script && script.includes('webdriver-io-capture-it')) {
                 this.logTestCaseName();
             }
         }
