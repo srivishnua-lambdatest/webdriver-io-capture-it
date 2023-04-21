@@ -1,0 +1,30 @@
+{
+  "name": "webdriver-io-capture-it",
+  "version": "1.0.0",
+  "description": "An SDK to capture it() block content in WebDriver.IO and log it as Test Case Name.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srivishnua-lambdatest/webdriver-io-capture-it.git"
+  },
+  "keywords": [
+    "webdriverio",
+    "webdriver",
+    "capture",
+    "it",
+    "test case name"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srivishnua-lambdatest/webdriver-io-capture-it/issues"
+  },
+  "homepage": "https://github.com/srivishnua-lambdatest/webdriver-io-capture-it#readme",
+  "dependencies": {
+    "@wdio/logger": "^7.16.14",
+    "webdriverio": "^7.16.14"
+  }
+}
