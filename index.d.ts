@@ -4,6 +4,7 @@ declare module 'wdio-capture-it' {
     class WdioCaptureIt implements Services.HookFunctions {
         constructor(config: object);
         beforeTest?(test: Services.HookFunctions.BeforeTestParam): void;
+        afterTest?(test: Services.HookFunctions.AfterTestParam): void;
     }
 
     export default WdioCaptureIt;

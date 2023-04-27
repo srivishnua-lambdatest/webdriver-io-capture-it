@@ -5,13 +5,23 @@ class WdioCaptureIt {
 
     beforeTest(test) {
         this.testCaseName = test.title;
-        this.logTestCaseName();
+        this.logTestCaseName('before');
     }
 
-    logTestCaseName() {
-        browser.execute((name) => {
-            console.log('Test Case Name:', name);
-        }, this.testCaseName);
+    afterTest(test) {
+        this.testCaseName = test.title;
+        this.logTestCaseName('after');
+    }
+
+    logTestCaseName(phase) {
+        const logObject = {
+            phase: phase,
+            testName: this.testCaseName
+        };
+
+        browser.execute((logObj) => {
+            console.log(logObj);
+        }, logObject);
     }
 }
 
