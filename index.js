@@ -5,12 +5,12 @@ class WdioCaptureIt {
 
     beforeTest(test) {
         this.testCaseName = test.title;
-        this.logTestCaseName('before');
+        this.logTestCaseName('startTestCase');
     }
 
     afterTest(test) {
         this.testCaseName = test.title;
-        this.logTestCaseName('after');
+        this.logTestCaseName('endTestCase');
     }
 
     logTestCaseName(phase) {
