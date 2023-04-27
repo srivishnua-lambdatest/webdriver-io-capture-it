@@ -1,6 +1,6 @@
 {
   "name": "webdriver-io-capture-it",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "An SDK to capture it() block content in WebDriver.IO and log it as Test Case Name.",
   "main": "index.js",
   "types": "index.d.ts",
