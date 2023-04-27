@@ -20,7 +20,7 @@ class WdioCaptureIt {
         };
 
         browser.execute((logObj) => {
-            console.log(logObj);
+            return logObj;
         }, logObject);
     }
 }
