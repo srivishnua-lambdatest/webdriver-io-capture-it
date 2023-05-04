@@ -1,4 +1,4 @@
-# wdio-capture-it
+# webdriver-io-capture-it
 
 A WebDriver.IO service that captures the `it()` block test case names and logs them in the browser console using the `browser.execute()` function.
 
@@ -7,7 +7,7 @@ A WebDriver.IO service that captures the `it()` block test case names and logs t
 Install the package using npm:
 
 ```sh
-npm install wdio-capture-it
+npm install webdriver-io-capture-it
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install wdio-capture-it
 1. Add the `wdio-capture-it` service to your `wdio.conf.js` file in your WebDriver.IO project:
 
 ```javascript
-const WdioCaptureIt = require('wdio-capture-it').default;
+const WdioCaptureIt = require('webdriver-io-capture-it').default;
 
 exports.config = {
     // ...
@@ -48,7 +48,7 @@ npm install @wdio/types
 After installing the necessary packages, you can import the `WdioCaptureIt` service in your TypeScript configuration file:
 
 ```typescript
-import WdioCaptureIt from 'wdio-capture-it';
+import WdioCaptureIt from 'webdriver-io-capture-it';
 
 export const config: WebdriverIO.Config = {
     // ...
